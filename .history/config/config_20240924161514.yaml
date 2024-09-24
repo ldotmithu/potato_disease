@@ -1,0 +1,5 @@
+artifacts_root: artifacts
+
+data_ingestion:
+  roo_dir: artifacts/data_ingestion
+  URL: 

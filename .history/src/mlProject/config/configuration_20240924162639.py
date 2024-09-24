@@ -12,24 +12,13 @@ class Configurationmanger:
     def get_data_ingestion_config(self):
         config=self.config.data_ingestion
         
-        create_directories([config.root_dir])
+        create_directories([config.roo_dir])
         
         data_ingestion_config=DataIngestionConfig(
-            root_dir=config.root_dir,
+            roo_dir=config.roo_dir,
             URL=config.URL,
             locat_data_path=config.locat_data_path,
             unzip_dir=config.unzip_dir
         )
         
         return data_ingestion_config
-    
-    def get_prepare_base_model_config(self):
-        config=self.config.preapre_base_model
-        
-        create_directories([config.root_dir])
-        
-        preapre_base_model_config=BaseModelConfig(
-            root_dir=config.root_dir,
-            vgg_model=config.vgg_model
-        )
-        return preapre_base_model_config

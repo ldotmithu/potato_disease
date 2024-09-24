@@ -9,8 +9,3 @@ class DataIngestionConfig:
     locat_data_path:Path
     unzip_dir:Path
     
-@dataclass    
-class BaseModelConfig:
-    root_dir:Path
-    vgg_model:Path    
-    

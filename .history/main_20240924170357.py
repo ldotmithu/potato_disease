@@ -4,7 +4,7 @@ from mlProject import logging
 Stage_Name='Data Ingestion '
 try:
     data_ingestion=DataIngestionPipeline()
-    data_ingestion.main()
+    data_ingestion.ingestion_main()
     logging.info(f'{Stage_Name} completed')
     logging.info('>>>>>>>>>>>>>>>>>>>>>>>>')
 except Exception as e:
