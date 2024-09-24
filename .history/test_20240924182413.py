@@ -9,7 +9,7 @@ test_data=test_datagen.flow_from_directory(
     directory='artifacts/data_ingestion/test',
     target_size=(224,224),
     class_mode='categorical',
-    batch_size=8
+    batch_size=32
     
 )
 

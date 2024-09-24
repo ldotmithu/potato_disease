@@ -22,7 +22,7 @@ if uploaded_file is not None:
     st.image(image, caption="Uploaded Image", use_column_width=True)
 
     # Preprocess the image
-    img = image.resize((224, 224))
+    img = image.resize((256, 256))
     img_array = np.array(img, dtype=np.float32)  # Convert PIL image to numpy array as float
     img_array = np.expand_dims(img_array, axis=0)  # Add batch dimension
     img_array /= 255.0  # Normalize pixel values

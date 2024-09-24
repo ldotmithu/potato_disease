@@ -43,10 +43,7 @@ class Configurationmanger:
         training_config=Trainconfig(
             root_dir=config.root_dir,
             vgg_model=config.vgg_model,
-            final_model=config.final_model,
-            test_data=config.test_data,
-            train_data=config.train_data,
-            val_data=config.val_data
+            final_model=config.final_model
         )
         
         return training_config

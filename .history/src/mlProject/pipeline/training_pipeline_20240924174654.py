@@ -35,14 +35,4 @@ class BaseModelPipeline:
         except Exception as e:
             logging.exception(e)
             raise e 
-            
-            
-class TrainPipeline:
-    def __init__(self) -> None:
-        pass
-    
-    def main(self):
-        config=Configurationmanger()
-        training_config=config.get_training_config()
-        train=Train(config=training_config)
-        train.model_train()
+        

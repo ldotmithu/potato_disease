@@ -18,9 +18,5 @@ class BaseModelConfig:
 class Trainconfig:
     root_dir:Path
     vgg_model:Path
-    final_model:Path
-    train_data:Path
-    test_data:Path
-    val_data:Path    
-        
+    final_model:Path    
     
